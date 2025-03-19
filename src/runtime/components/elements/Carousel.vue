@@ -106,7 +106,7 @@ export default defineComponent({
     },
     ui: {
       type: Object as PropType<DeepPartial<typeof config> & { strategy?: Strategy }>,
-      default: undefined
+      default: () => undefined
     }
   },
   setup(props, { expose }) {
